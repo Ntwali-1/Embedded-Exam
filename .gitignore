@@ -1,0 +1,16 @@
+# Python virtual environment (project root doubles as the venv)
+Lib/
+Scripts/
+Include/
+pyvenv.cfg
+__pycache__/
+*.pyc
+
+# Downloaded external tool binaries
+tools/
+
+# Local environment config (use pc/config.example.env as the template)
+pc/.env
+
+# Logs
+*.log
