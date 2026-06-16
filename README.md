@@ -4,6 +4,11 @@ Embedded exam project: read temperature on Arduino Uno, display on I2C LCD, send
 
 **System flow:** Temperature Sensor → Arduino Uno → LCD + USB Serial → PC Program → MQTT Broker
 
+| | |
+|---|---|
+| Repository | https://github.com/Ntwali-1/Embedded-Exam |
+| Live dashboard | http://157.173.101.159:8059 |
+
 ---
 
 ## (a) System Architecture Diagram
@@ -23,8 +28,8 @@ flowchart LR
         MQ[MQTT Publisher\npaho-mqtt]
     end
 
-    subgraph VPS
-        BRK[MQTT Broker\nMosquitto]
+    subgraph VPS[VPS 157.173.101.159]
+        BRK[MQTT Broker\nbroker.benax.rw:1883]
         DB[Web Dashboard\nFlask :8059]
     end
 
